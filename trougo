@@ -1,0 +1,24 @@
+package mojprvijavaprogram;
+
+public class PovrsinaTrougla {
+
+    public static void main(String[] args) {
+        int a = 20, b = 20, c = 10;
+
+        if (a + b < c || a + c < b || b + c < a) {
+            System.out.print("moguce je formirati trougao i ");
+            if (a == b && a == c) {
+                System.out.println("trougao je jednakostranicni");
+            } else if (a == b || a == c || b == c) {
+                System.out.println("trougao je jednakokraki");
+            } else if (a == b || a == c || b == c) {
+                System.out.println("trougao je jednakokraki");
+            } else {
+                System.out.println("sve stranice trogla su razlicite");
+            }
+        } else {
+            System.out.println("nije moguce formirati trougao");
+        }
+
+    }
+}
